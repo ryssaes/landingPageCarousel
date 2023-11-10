@@ -27,6 +27,10 @@ nav{
     align-items: center;
 }
 
+.icon-menu{
+    display: none;
+}
+
 .menu-list{
     display: flex;
     gap: 20px;
@@ -364,4 +368,20 @@ nav{
     width: 178px;
     height: 50px;
     margin: 0;
+}
+
+@media screen and (max-width: 995px){
+
+    .menu-list{
+        display: none;
+    }
+
+    .icon-menu{
+        display: block;
+        width: 30px;
+        height: 24px;
+        margin: 0;
+        margin-left: 20px;
+        cursor: pointer;
+}
 }
