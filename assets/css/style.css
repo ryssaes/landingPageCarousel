@@ -93,6 +93,28 @@ nav{
     margin: 0 auto;
 }
 
+.container-main{
+    background-image: url('../images/image-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1020px;
+    position: relative;
+}
+
+.container-main::before{
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 1020px;
+    position: absolute;
+    background-color: var(--black);
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
 .main-title{
     font-size: 72px;
     line-height: 86px;
@@ -100,11 +122,10 @@ nav{
     font-weight: 600;
     display: block;
     width: 610px;
-    position: absolute;
-    top: 0px;
-    left: 300px;
     color: var(--white);
     margin-top: 250px;
+    position: relative;
+    z-index: 2;
 }
 
 .main-title::after{
@@ -122,13 +143,13 @@ nav{
     display: block;
     width: 400px;
     height: 116px;
-    position: absolute;
-    bottom: 260px;
-    left: 300px;
+    position: relative;
     color: var(--white);
     font-family: var(--roboto);
     font-weight: 400;
     margin: 0;
+    z-index: 2;
+    margin-top: 30px;
 }
 
 .container-about{
@@ -240,6 +261,9 @@ nav{
 .container-carousel{
     background-color: var(--gray);
     margin: 0;
+    height: 660px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .owl-nav button.owl-prev{
