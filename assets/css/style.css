@@ -201,6 +201,7 @@ nav{
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
+    font-family: var(--roboto);
 }
 
 .container-icons{
@@ -323,6 +324,7 @@ nav{
     padding-top: 150px;
     padding-bottom: 150px;
     text-align: center;
+    height: 482px;
 }
 
 .title-download{
@@ -346,4 +348,20 @@ nav{
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
+    margin: 0;
+    font-family: var(--roboto);
+    font-weight: 700;
+}
+
+.container-riot{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--gray);
+}
+
+.logo-riot img{
+    width: 178px;
+    height: 50px;
+    margin: 0;
 }
