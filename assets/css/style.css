@@ -190,7 +190,7 @@ nav{
     margin-top: 30px;
 }
 
-.ver-mais{
+.button-about{
     margin-top: 50px;
     border: none;
     background-color: var(--white);
@@ -316,4 +316,34 @@ nav{
 
 .owl-theme .owl-dots .owl-dot:hover span{
     background-color: var(--black);
+}
+
+.container-download{
+    background-color: var(--black);
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+.title-download{
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--white);
+    font-family: var(--roboto);
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+} 
+
+.button-download{
+    margin-top: 50px;
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
 }
