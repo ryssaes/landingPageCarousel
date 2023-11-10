@@ -128,6 +128,7 @@ nav{
     color: var(--white);
     font-family: var(--roboto);
     font-weight: 400;
+    margin: 0;
 }
 
 .container-about{
@@ -234,6 +235,11 @@ nav{
 .item img{
     width: 820px !important;
     height: 460px;
+}
+
+.container-carousel{
+    background-color: var(--gray);
+    margin: 0;
 }
 
 .owl-nav button.owl-prev{
