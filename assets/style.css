@@ -7,7 +7,6 @@
     --white: #fff;
     --orange: #FA8550;
     --gray: #F8F8F8;
-
         /* fonts */ 
     --roboto: 'Roboto Condensed';
 }
@@ -235,6 +234,11 @@ nav{
 .item img{
     width: 820px !important;
     height: 460px;
+}
+
+.container-carousel{
+    background-color: var(--gray);
+    margin: 0;
 }
 
 .owl-nav button.owl-prev{
