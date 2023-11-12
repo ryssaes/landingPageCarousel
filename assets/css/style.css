@@ -370,18 +370,66 @@ nav{
     margin: 0;
 }
 
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
 @media screen and (max-width: 995px){
 
-    .menu-list{
-        display: none;
+    body{
+        overflow-x: hidden;
     }
 
-    .icon-menu{
+    .nav-desktop {
+        padding: 1.5rem 4rem;
+    }
+    .menu-list li {
+        display: none;
+    }
+    .mobile-menu-icon {
         display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-icon img{
         width: 30px;
         height: 24px;
-        margin: 0;
-        margin-left: 20px;
-        cursor: pointer;
-}
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+
+    .mobile-menu a{
+        text-decoration: none;
+        font-family: var(--roboto);
+        font-weight: 700;
+        color: var(--black);
+        transition: all 0.3s;
+    }
+    
+    .mobile-menu a:hover{
+        color: var(--orange);
+    }
+
+    .open {
+        display: block;
+    }
+
 }
