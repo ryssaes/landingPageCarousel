@@ -192,6 +192,7 @@ nav{
     width: 820px;
     margin: 0 auto;
     margin-top: 30px;
+    width: 100%;
 }
 
 .button-about{
@@ -379,7 +380,7 @@ nav{
 }
 
 
-@media screen and (max-width: 995px){
+@media screen and (max-width: 774px){
 
     body{
         overflow-x: hidden;
@@ -403,6 +404,10 @@ nav{
     .mobile-menu-icon img{
         width: 30px;
         height: 24px;
+    }
+
+    .mobile-menu{
+        height: 360px;
     }
 
     .mobile-menu ul {
@@ -432,4 +437,36 @@ nav{
         display: block;
     }
 
+    .main-title{
+        width: 100%;
+    }
+
+    .container-main{
+        padding-left: 20px;
+    }
+
+    .container-icons {
+        text-align: center;
+    }
+    
+    .list-icons {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .icons {
+        max-width: 300px;
+        margin: 20px auto;
+    }
+    
+    .icons figure {
+        text-align: center;
+    }
+    
+    .icons img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    
 }

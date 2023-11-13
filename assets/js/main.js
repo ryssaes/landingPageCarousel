@@ -26,6 +26,6 @@ function menuShow() {
         document.querySelector('.icon').src = "assets/images/free_icon_1.svg";
     } else {
         menuMobile.classList.add('open');
-        document.querySelector('.icon').src = "assets/images/close.png";
+        document.querySelector('.icon').src = "assets/images/free_icon_1.svg";
     }
 }
