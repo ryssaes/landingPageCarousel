@@ -12,10 +12,6 @@
     --roboto: 'Roboto Condensed';
 }
 
-.logo {
-    flex-grow: 4;
-}
-
 .logo img {
     width: 210px;
     height: 30px;
@@ -25,6 +21,7 @@ nav {
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .icon-menu {
@@ -43,12 +40,24 @@ nav {
     font-family: var(--roboto);
     font-weight: 700;
     color: var(--black);
-    transition: all 0.3s;
+    position: relative;
 }
 
-.menu-list a:hover {
-    color: var(--orange);
+.menu-list a::after {
+    content: " ";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: var(--orange);
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s ease;
 }
+
+.menu-list a:hover::after {
+    width: 100%;
+}
+
 
 .menu-list li {
     list-style-type: none;
@@ -238,6 +247,7 @@ nav {
     list-style: none;
     margin-top: 30px;
     gap: 20px;
+    padding: 0;
 }
 
 .icons img {
@@ -371,10 +381,6 @@ nav {
     margin: 0;
 }
 
-.mobile-menu-icon {
-    display: none;
-}
-
 .mobile-menu {
     display: none;
 }
@@ -386,7 +392,11 @@ nav {
 
 
 
-@media screen and (max-width: 774px) {
+@media screen and (max-width: 768px) {
+
+    nav {
+        justify-content: space-between;
+    }
 
     #btn-mobile {
         display: flex;
@@ -432,18 +442,19 @@ nav {
         display: block;
         position: absolute;
         width: 100%;
-        top: 70px;
+        top: 59px;
         right: 0px;
-        background-color: #cecece;
+        background-color: white;
         height: 0px;
         z-index: 99999;
         transition: 0.6s;
         visibility: hidden;
         overflow-y: hidden;
+        text-align: center;
     }
 
     #nav.active #menu {
-        height: calc(100vh - 70px);
+        height: 25vh;
         visibility: visible;
         overflow-y: auto;
     }
@@ -454,25 +465,6 @@ nav {
 
     .nav-desktop {
         padding: 1.5rem 4rem;
-    }
-
-    .menu-list li {
-        display: none;
-    }
-
-    .mobile-menu-icon {
-        display: block;
-    }
-
-    .mobile-menu-icon button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mobile-menu-icon img {
-        width: 30px;
-        height: 24px;
     }
 
     .mobile-menu {
@@ -496,11 +488,22 @@ nav {
         font-family: var(--roboto);
         font-weight: 700;
         color: var(--black);
-        transition: all 0.3s;
+        position: relative;
     }
 
-    .mobile-menu a:hover {
-        color: var(--orange);
+    .mobile-menu a::after {
+        content: " ";
+        position: absolute;
+        height: 2px;
+        width: 0;
+        background-color: white;
+        bottom: 0;
+        left: 0;
+        transition: width 0.5s ease;
+    }
+
+    .mobile-menu a:hover::after{
+        width: 100%;
     }
 
     .open {
@@ -538,5 +541,47 @@ nav {
         height: auto;
     }
 
+    .item img {
+        width: 500px !important;
+        height: 280px;
+    }
 
+}
+
+@media screen and (max-width: 425px){
+    .nav-desktop{
+        padding: 0px;
+    }
+    
+    .main-text{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    .main-title{
+        margin-top: 100px;
+    }
+
+    .list-icons{
+        display: block;
+    }
+
+    .item img {
+        width: 250px !important;
+        height: 140px;
+    }
+
+    .container-carousel{
+        height: 240px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .container-download {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        height: 350px;
+    }
 }

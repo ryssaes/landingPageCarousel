@@ -19,6 +19,7 @@ $(document).ready(function () {
     });
 });
 
+
 const btnMobile = document.getElementById("btn-mobile");
 
 function toggleMenu(event) {
