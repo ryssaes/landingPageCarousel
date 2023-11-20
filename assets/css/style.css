@@ -390,6 +390,25 @@ nav {
     display: none;
 }
 
+@media screen and (min-width: 2560px){
+    .main-title{
+        right: 170px;
+    }
+    
+    .main-text{
+        right: 170px;
+    }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2000px){
+    .main-title{
+        left: 100px;
+    }
+    
+    .main-text{
+        left: 100px;
+    }
+}
 
 
 @media screen and (max-width: 768px) {
@@ -502,7 +521,7 @@ nav {
         transition: width 0.5s ease;
     }
 
-    .mobile-menu a:hover::after{
+    .mobile-menu a:hover::after {
         width: 100%;
     }
 
@@ -511,11 +530,16 @@ nav {
     }
 
     .main-title {
-        width: 100%;
+        width: 610px;
+        height: 258px;
+        line-height: 86px;
     }
 
-    .container-main {
-        padding-left: 20px;
+    .main-text {
+        width: 400px;
+        height: 116px;
+        line-height: 29px;
+        margin-top: 60px;
     }
 
     .container-icons {
@@ -548,23 +572,77 @@ nav {
 
 }
 
-@media screen and (max-width: 425px){
-    .nav-desktop{
+@media screen and (max-width: 425px) {
+
+    .logo img {
+        padding-left: 20px;
+    }
+
+    .nav-desktop {
         padding: 0px;
     }
-    
-    .main-text{
+
+    .main-text {
         width: 100%;
     }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 499px) {
 
-    .main-title{
+    .main-title {
         margin-top: 100px;
+        font-size: 48px;
+        line-height: 58px;
+        width: 320px;
+        margin-left: 20px;
     }
 
-    .list-icons{
+    .main-text {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 30px;
+        width: 320px;
+        margin-left: 20px;
+        padding-right: 20px;
+    }
+
+    .container-main::before {
+        height: 700px;
+    }
+
+    .container-main {
+        height: 700px;
+    }
+
+    .title-about {
+        line-height: 43px;
+        font-size: 36px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .text-about {
+        width: 320px;
+        height: 120px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .button-about {
+        margin-top: 50px;
+    }
+
+    .container-about {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .title-icons {
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    .list-icons {
         display: block;
     }
 
@@ -573,7 +651,7 @@ nav {
         height: 140px;
     }
 
-    .container-carousel{
+    .container-carousel {
         height: 240px;
         padding-top: 50px;
         padding-bottom: 50px;
@@ -583,5 +661,15 @@ nav {
         padding-top: 50px;
         padding-bottom: 50px;
         height: 350px;
+    }
+
+    .title-download {
+        font-size: 36px;
+        line-height: 43px;
+        margin-bottom: 30px;
+    }
+
+    .container-download {
+        height: 233px;
     }
 }
