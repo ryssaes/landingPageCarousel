@@ -390,22 +390,22 @@ nav {
     display: none;
 }
 
-@media screen and (min-width: 2560px){
-    .main-title{
+@media screen and (min-width: 2560px) {
+    .main-title {
         right: 170px;
     }
-    
-    .main-text{
+
+    .main-text {
         right: 170px;
     }
 }
 
-@media screen and (min-width: 1440px) and (max-width: 2000px){
-    .main-title{
+@media screen and (min-width: 1440px) and (max-width: 2000px) {
+    .main-title {
         left: 100px;
     }
-    
-    .main-text{
+
+    .main-text {
         left: 100px;
     }
 }
