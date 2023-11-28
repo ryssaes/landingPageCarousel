@@ -588,6 +588,17 @@ nav {
 }
 
 @media screen and (max-width: 499px) {
+    .owl-nav button.owl-prev {
+        width: 30px;
+        height: 30px;
+        top: 30%;
+    }
+    
+    .owl-nav button.owl-next {
+        width: 30px;
+        height: 30px;
+        top: 30%;
+    }
 
     .main-title {
         margin-top: 100px;
